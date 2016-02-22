@@ -1,0 +1,116 @@
+div {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+header {
+    background-color: #a4c5cf;
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+}
+
+header ul li {
+    display: inline;
+}
+header a {
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 20px;
+}
+
+.name {
+    margin-top: 100px;
+    text-align: center;
+}
+
+.name h4 {
+    margin-top: -25px;
+}
+
+h2 {
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+    text-align: center;
+    padding: 5px;
+}
+
+.about {
+    height: 300px;
+}
+
+.left {
+    float: left;
+    width: 35%;
+    text-align: left;
+    margin-left: 80px;
+}
+
+.right {
+    float: right;
+    width: 35%;
+   text-align: left;
+   margin-right: 80px;
+}
+
+.skills {
+    height: 150px;
+}
+
+
+.projects h4 {
+    margin-bottom: -18px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.projects p {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+.experience p {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -22px;
+    margin-bottom: 20px;
+}
+
+.experience h4 {
+    margin-left: 70px;
+    margin-right: 70px;
+}
+
+.green {
+    color: #a4c5cf;
+    font-style: italic;
+}
+
+.education {
+    height: 180px;
+}
+.education p {
+    margin-bottom: -20px;
+}
+
+form {
+    background-color: #a4c5cf;
+    border-radius: 5px;
+    width: 75%;
+    height: 400px;
+    margin: 0 auto;
+}
+
+form div + div {
+    margin-top: 20px;
+}
+
+input, label {
+    display: block;
+}
+
+
+
