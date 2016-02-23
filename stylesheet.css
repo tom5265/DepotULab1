@@ -22,6 +22,10 @@ header a {
     padding: 20px;
 }
 
+header a:hover {
+    color: black;
+}
+
 .name {
     margin-top: 100px;
     text-align: center;
@@ -94,23 +98,75 @@ h2 {
 }
 .education p {
     margin-bottom: -20px;
+    margin-left: 80px;
+    margin-right: 80px;
 }
+
 
 form {
     background-color: #a4c5cf;
+    border: 1px solid #D3D3D3;
     border-radius: 5px;
-    width: 75%;
+    width: 65%;
     height: 400px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+form div  {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+input {
+    display: block;
     margin: 0 auto;
 }
 
-form div + div {
+label {
+    position: relative;
+    right: 100px;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+input {
+    width: 250px;
+    border: solid 1px #D3D3D3;
+    border-radius: 5px;
+}
+
+.big-form {
+    height: 200px;
+}
+
+button {
+    width: 250px;
+    background-color: #FFFFFF;
+    border: 1px solid #D3D3D3;
+    border-radius: 5px;
+    color: #a4c5cf;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid black;
+    max-width: 65%;
+    margin: 0 auto;
+    text-align: center;
     margin-top: 20px;
 }
 
-input, label {
-    display: block;
+footer a {
+    text-decoration: none;
+    color: black;
+    padding: 10px;
 }
 
-
+footer a:hover {
+    color: #a4c5cf;
+}
 
