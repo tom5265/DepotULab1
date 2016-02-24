@@ -1,0 +1,193 @@
+@primaryColor: #a4c5cf;
+@greyColor: #D3D3D3;
+@white: #FFFFFF;
+@black: #000000;
+@floatMargin: 80px;
+
+.roundedCorners(@radius: 5px) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+    
+}
+
+.mixin(@color) when (lightness(@color) >= 50%) {
+  background-color: #a4c5cf;
+}
+.mixin(@color) when (lightness(@color) < 50%) {
+  background-color: #FFFFFF;
+}
+.mixin(@color) {
+  color: @color;
+}
+
+
+
+div {
+    max-width: 65%;
+    margin: 0 auto;
+}
+
+header {
+    .mixin(#FFFFFF);
+    position: fixed;
+    height: 50px;
+    width: 100%;
+    top: 0;
+    left: 0;
+    text-align: center;
+    
+    ul li {
+    display: inline;
+}
+    
+    a {
+    text-decoration: none;
+    color: @white;
+    padding: 20px;
+    &:hover {color: @black;}
+}
+}
+
+.name {
+    margin-top: 100px;
+    text-align: center;
+    
+    h4 {
+        margin-top: -25px;
+    }
+}
+
+h2 {
+    border-top: 1px solid @black;
+    border-bottom: 1px solid @black;
+    text-align: center;
+    padding: 5px;
+}
+
+.about {
+    height: 300px;
+}
+
+.left {
+    float: left;
+    width: 35%;
+    text-align: left;
+    margin-left: @floatMargin;
+}
+
+.right {
+    float: right;
+    width: 35%;
+   text-align: left;
+   margin-right: @floatMargin;
+}
+
+.skills {
+    height: 150px;
+}
+
+
+.projects {
+    h4 {
+    margin-bottom: -18px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+    p {
+    margin-left: 80px;
+    margin-right: 80px;
+}
+}
+
+.experience { 
+    
+    p {
+    margin-left: 80px;
+    margin-right: 80px;
+    margin-top: -22px;
+    margin-bottom: 20px;
+}
+
+ h4 {
+    margin-left: 70px;
+    margin-right: 70px;
+    }
+}
+
+.green {
+    color: @primaryColor;
+    font-style: italic;
+}
+
+.education {
+    height: 180px;
+    
+    p {
+         margin-bottom: -20px;
+         margin-left: 80px;
+         margin-right: 80px;
+    }
+}
+
+form {
+    background-color: @primaryColor;
+    border: 1px solid @greyColor;
+    .roundedCorners;
+    width: 65%;
+    height: 400px;
+    margin: 0 auto;
+    text-align: center;
+    
+    div {
+         margin-top: 15px;
+        margin-bottom: 15px;
+    }
+}
+
+label {
+    position: relative;
+    right: 100px;
+    color: @white;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+input {
+    width: 250px;
+    border: solid 1px @greyColor;
+    .roundedCorners;
+    display: block;
+    margin: 0 auto;
+}
+
+.big-form {
+    height: 200px;
+}
+
+button {
+    width: 250px;
+    background-color: @white;
+    border: 1px solid @greyColor;
+    .roundedCorners;
+    color: @primaryColor;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+footer {
+    border-top: 1px solid @black;
+    max-width: 65%;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 20px;
+    
+    a {
+        text-decoration: none;
+        color: @black;
+        padding: 10px;
+        &:hover {color: @primaryColor;}
+    }
+}
+
