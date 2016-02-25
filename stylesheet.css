@@ -1,34 +1,33 @@
-div {
-  max-width: 65%;
-  margin: 0 auto;
+* {
+  font-family: 'Merriweather', Times, serif;
 }
-header {
-  background-color: #a4c5cf;
-  color: #FFFFFF;
-  position: fixed;
-  height: 50px;
+.navbar-nav {
   width: 100%;
-  top: 0;
-  left: 0;
   text-align: center;
 }
-header ul li {
-  display: inline;
+.navbar-nav > li {
+  float: none;
+  display: inline-block;
 }
-header a {
-  text-decoration: none;
+.navbar-collapse.collapse {
+  background-color: #a4c5cf;
+  text-align: center;
+}
+.navbar-header {
+  background-color: #a4c5cf;
+}
+.navbar.navbar-default.navbar-fixed-top a {
   color: #FFFFFF;
-  padding: 20px;
 }
-header a:hover {
+.navbar.navbar-default.navbar-fixed-top a:hover {
   color: #000000;
 }
-.name {
-  margin-top: 100px;
+#name {
+  margin-top: 70px;
   text-align: center;
 }
-.name h4 {
-  margin-top: -25px;
+#bold {
+  font-weight: bold;
 }
 h2 {
   border-top: 1px solid #000000;
@@ -36,54 +35,31 @@ h2 {
   text-align: center;
   padding: 5px;
 }
-.about {
-  height: 300px;
+h2 a {
+  color: #000000;
+}
+h2 a:hover {
+  color: #000000;
+  text-decoration: none;
+}
+.container {
+  max-width: 65%;
 }
 .left {
   float: left;
-  width: 35%;
   text-align: left;
-  margin-left: 80px;
 }
 .right {
   float: right;
-  width: 35%;
   text-align: left;
-  margin-right: 80px;
-}
-.skills {
-  height: 150px;
-}
-.projects h4 {
-  margin-bottom: -18px;
-  margin-left: 80px;
-  margin-right: 80px;
-}
-.projects p {
-  margin-left: 80px;
-  margin-right: 80px;
-}
-.experience p {
-  margin-left: 80px;
-  margin-right: 80px;
-  margin-top: -22px;
-  margin-bottom: 20px;
-}
-.experience h4 {
-  margin-left: 70px;
-  margin-right: 70px;
 }
 .green {
   color: #a4c5cf;
   font-style: italic;
+  margin-left: 20px;
 }
-.education {
-  height: 180px;
-}
-.education p {
-  margin-bottom: -20px;
-  margin-left: 80px;
-  margin-right: 80px;
+.indent {
+  margin-left: 20px;
 }
 form {
   background-color: #a4c5cf;
@@ -92,7 +68,6 @@ form {
   -webkit-border-radius: 5px;
   border-radius: 5px;
   width: 65%;
-  height: 400px;
   margin: 0 auto;
   text-align: center;
 }
@@ -100,15 +75,14 @@ form div {
   margin-top: 15px;
   margin-bottom: 15px;
 }
-label {
-  position: relative;
-  right: 100px;
+form label {
+  margin-right: 35%;
   color: #FFFFFF;
   text-transform: uppercase;
   font-size: 12px;
 }
-input {
-  width: 250px;
+form input {
+  width: 50%;
   border: solid 1px #D3D3D3;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
@@ -119,30 +93,31 @@ input {
 .big-form {
   height: 200px;
 }
-button {
-  width: 250px;
+.contact-button {
+  width: 50%;
   background-color: #FFFFFF;
   border: 1px solid #D3D3D3;
   -moz-border-radius: 5px;
   -webkit-border-radius: 5px;
   border-radius: 5px;
   color: #a4c5cf;
-  font-family: 'Times New Roman', Times, serif;
   font-size: 16px;
   font-weight: bold;
 }
-footer {
+#footer {
+  font-family: 'Algae Sans', 'Merriweather', 'Times New Roman', Times, serif;
   border-top: 1px solid #000000;
   max-width: 65%;
   margin: 0 auto;
   text-align: center;
   margin-top: 20px;
+  font-size: 18px;
 }
-footer a {
+#footer a {
   text-decoration: none;
   color: #000000;
   padding: 10px;
 }
-footer a:hover {
+#footer a:hover {
   color: #a4c5cf;
 }

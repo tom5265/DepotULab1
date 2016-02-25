@@ -1,61 +1,39 @@
-@primaryColor: #a4c5cf;
-@greyColor: #D3D3D3;
-@white: #FFFFFF;
-@black: #000000;
-@floatMargin: 80px;
+@import 'mixin.less';
+@import 'Variables.less';
 
-.roundedCorners(@radius: 5px) {
-    -moz-border-radius: @radius;
-    -webkit-border-radius: @radius;
-    border-radius: @radius;
-    
+* {
+    font-family: 'Merriweather', Times, serif;
 }
 
-.mixin(@color) when (lightness(@color) >= 50%) {
-  background-color: #a4c5cf;
-}
-.mixin(@color) when (lightness(@color) < 50%) {
-  background-color: #FFFFFF;
-}
-.mixin(@color) {
-  color: @color;
-}
-
-
-
-div {
-    max-width: 65%;
-    margin: 0 auto;
-}
-
-header {
-    .mixin(#FFFFFF);
-    position: fixed;
-    height: 50px;
+.navbar-nav {
     width: 100%;
-    top: 0;
-    left: 0;
     text-align: center;
-    
-    ul li {
-    display: inline;
+    > li {
+      float: none;
+      display: inline-block;
+    }
+  }
+
+.navbar-collapse.collapse {
+    background-color: @primaryColor;
+    text-align: center;
 }
-    
-    a {
-    text-decoration: none;
-    color: @white;
-    padding: 20px;
-    &:hover {color: @black;}
-}
+.navbar-header {
+    background-color: @primaryColor;
 }
 
-.name {
-    margin-top: 100px;
-    text-align: center;
-    
-    h4 {
-        margin-top: -25px;
-    }
+.navbar.navbar-default.navbar-fixed-top a {
+    color: @white;
+     &:hover {color: @black;}    
+}
+
+#name {
+    margin-top: 70px;
+    text-align: center;  
+}
+
+#bold {
+    font-weight: bold;
 }
 
 h2 {
@@ -63,71 +41,37 @@ h2 {
     border-bottom: 1px solid @black;
     text-align: center;
     padding: 5px;
+    
+    a {
+        color: @black;
+         &:hover {color: @black; 
+         text-decoration: none;}  
+    }
 }
 
-.about {
-    height: 300px;
+.container {
+    max-width: 65%;
 }
 
 .left {
     float: left;
-    width: 35%;
     text-align: left;
-    margin-left: @floatMargin;
+    
 }
 
 .right {
     float: right;
-    width: 35%;
    text-align: left;
-   margin-right: @floatMargin;
-}
-
-.skills {
-    height: 150px;
-}
-
-
-.projects {
-    h4 {
-    margin-bottom: -18px;
-    margin-left: 80px;
-    margin-right: 80px;
-}
-    p {
-    margin-left: 80px;
-    margin-right: 80px;
-}
-}
-
-.experience { 
-    
-    p {
-    margin-left: 80px;
-    margin-right: 80px;
-    margin-top: -22px;
-    margin-bottom: 20px;
-}
-
- h4 {
-    margin-left: 70px;
-    margin-right: 70px;
-    }
 }
 
 .green {
     color: @primaryColor;
     font-style: italic;
+    margin-left: 20px;
 }
 
-.education {
-    height: 180px;
-    
-    p {
-         margin-bottom: -20px;
-         margin-left: 80px;
-         margin-right: 80px;
-    }
+.indent {
+    margin-left: 20px;
 }
 
 form {
@@ -135,53 +79,49 @@ form {
     border: 1px solid @greyColor;
     .roundedCorners;
     width: 65%;
-    height: 400px;
     margin: 0 auto;
     text-align: center;
-    
-    div {
+     div {
          margin-top: 15px;
         margin-bottom: 15px;
     }
-}
-
-label {
-    position: relative;
-    right: 100px;
+    label {
+    margin-right: 35%;
     color: @white;
     text-transform: uppercase;
     font-size: 12px;
 }
-
 input {
-    width: 250px;
+    width: 50%;
     border: solid 1px @greyColor;
     .roundedCorners;
     display: block;
     margin: 0 auto;
+}
 }
 
 .big-form {
     height: 200px;
 }
 
-button {
-    width: 250px;
+.contact-button {
+    width: 50%;
     background-color: @white;
     border: 1px solid @greyColor;
     .roundedCorners;
     color: @primaryColor;
-    font-family: 'Times New Roman', Times, serif;
     font-size: 16px;
     font-weight: bold;
 }
 
-footer {
+#footer {
+    font-family: 'Algae Sans', 'Merriweather', 'Times New Roman', Times, serif;
     border-top: 1px solid @black;
     max-width: 65%;
     margin: 0 auto;
     text-align: center;
     margin-top: 20px;
+    font-size: 18px;
     
     a {
         text-decoration: none;

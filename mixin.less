@@ -1,0 +1,16 @@
+.roundedCorners(@radius: 5px) {
+    -moz-border-radius: @radius;
+    -webkit-border-radius: @radius;
+    border-radius: @radius;
+    
+}
+
+.mixin(@color) when (lightness(@color) >= 50%) {
+  background-color: #a4c5cf;
+}
+.mixin(@color) when (lightness(@color) < 50%) {
+  background-color: #FFFFFF;
+}
+.mixin(@color) {
+  color: @color;
+}

@@ -2,106 +2,182 @@
 <html>
 <head>
     <title>My Resume</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous">
+
+    <script src="http://code.jquery.com/jquery.js"></script>
+    
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+    
+    <link href='https://fonts.googleapis.com/css?family=Merriweather' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
+    
+    
+   
        
 </head>
 <body>
-    <header>
-        <ul>
-            <li><a href="#aboutme">About</a></li>
-            <li><a href="#technicalskills">Skills</a></li>
-            <li><a href="#myprojects">Projects</a></li>
-            <li><a href="#">Resume</a></li>
-            <li><a href="#contactme">Contact</a></li>
-        </ul>
-    </header> 
+   <div id="main-nav" class="navbar navbar-default navbar-fixed-top"> 
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+            </div>
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav">
+                    <li><a href="#aboutme">About</a></li>
+                    <li><a href="#technicalskills">Skills</a></li>
+                    <li><a href="#myprojects">Projects</a></li>
+                    <li><a href="#contactme">Contact</a></li>
+                    <li><a href="#">Resume</a></li>
+                 </ul>
+             </div>
+   </div>
+    
   
-     <div class="name">
-        <h1>Thomas Moore</h1>
-        <h4>Front End Engineer</h4>
+    <div class="container">
+        <div class="row">
+            <div id="name" class="col-md-12">
+                <h1>Thomas Moore</h1>
+                <h4>Front End Engineer</h4>
+             </div>
+        </div>
     </div>
-  
-    <div class="about">
-        <h2><a name="aboutme">About Me</a></h2>
-  
-        <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repudiandae incidunt repellat amet sunt harum omnis optio nam doloremque molestias, officiis consectetur nobis ab est velit inventore cumque unde reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Saepe quos, rerum accusantium soluta officiis non nihil possimus neque placeat eveniet deleniti beatae dolorum voluptatum, veniam nostrum minus repellat. Dolores, natus.</p>
-        <p class="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque voluptatem ipsam nobis animi temporibus dignissimos quidem mollitia assumenda culpa libero, illo facilis ipsum recusandae, doloribus natus reiciendis iure voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere provident est neque autem, nobis distinctio voluptate doloribus totam sit dolor nemo nisi quis, maiores atque natus laborum. Tempore esse, quidem!</p>
-
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2><a name="aboutme">About Me</a></h2>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                 <p class="left">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quam repudiandae incidunt repellat amet sunt harum omnis optio nam doloremque molestias, officiis consectetur nobis ab est velit inventore cumque unde reiciendis. Lorem ipsum dolor sit amet, consectetur adipisicing   elit. Saepe quos, rerum accusantium soluta officiis non nihil possimus neque placeat eveniet deleniti beatae dolorum voluptatum, veniam nostrum minus repellat. Dolores, natus.</p>
+             </div>
+             <div class="col-md-6">   
+                <p class="right">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime neque voluptatem ipsam nobis animi temporibus dignissimos quidem mollitia assumenda culpa libero, illo facilis ipsum recusandae, doloribus natus reiciendis iure voluptate! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Facere provident est neque autem, nobis distinctio voluptate doloribus totam sit dolor nemo nisi quis, maiores atque natus laborum. Tempore esse, quidem!</p>
+            </div>
+       </div>
     </div>
   
   <div style="clear: both;"></div>
   
-    <div class="skills">
-        <h2><a name="technicalskills">Technical Skills</a></h2>
-  
-         <p class="left">HTML, CSS, Javascript, Bootstrap, JQuery, LESS, Git, NPM, APIs, REST Typescript, NodeJS/Express</p>
-         <p class="right">NoSQL, SQL Databases, Angular, PlatypusTS, PlatypusUI, Mobile Design, Cordova, Authentication, Deployment</p>
-  
+  <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2><a name="technicalskills">Technical Skills</a></h2>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                 <p class="left">HTML, CSS, Javascript, Bootstrap, JQuery, LESS, Git, NPM, APIs, REST Typescript, NodeJS/Express</p>
+             </div>
+             <div class="col-md-6">   
+                <p class="right">NoSQL, SQL Databases, Angular, PlatypusTS, PlatypusUI, Mobile Design, Cordova, Authentication, Deployment</p>
+            </div>
+       </div>
     </div>
   
     <div style="clear: both;"></div>
-  
-    <div class="projects">
-        <h2><a name="myprojects">Projects</a></h2>
-        
-        <h4>Ecommerce Innovation</h4>
-         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ducimus nihil, vero, dicta fugit voluptas dolores eius ad. Facilis iste minima consequuntur, nihil. Exercitationem tempore aliquam, libero doloribus deserunt ab.</p>
-        <h4>Revolutionary Social Media Site</h4>
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nobis esse omnis mollitia explicabo amet sit doloribus voluptates asperiores eligendi unde accusamus neque, hic, sapiente sed aperiam voluptatum facere quibusdam.</p>
-  
-    </div>
-  
-    <div class="experience">
-  
-        <h2>Experience</h2>
-  
-        <h4>Customer Support Lead</h4>
-        <p class="green">March 2015 - January 2016</p>
-        <p>Move Loot, Inc.</p>
-  
-        <h4>Marketing Manager</h4>
-        <p class="green">June 2013 - February 2015</p>
-        <p>Zoom Insights, Inc.</p>
-  
-    </div>
-  
-    <div class="education">
-  
-        <h2>Education</h2>
-        <p>Depot/U</p>
-        <p>University of North Carolina at Chapel Hill</p>
-  
-     </div>
-  
-    <div class="contact-me">
-      
-        <h2><a name="contactme">Contact Me</a></h2>  
     
-        <form action="" method="post">
-         <div>
-              <label for="name">Name</label>
-              <input type="text" id="name" required/>
-         </div>
-         <div>
-              <label for="mail">E-mail</label>
-              <input type="email" id="mail" required/>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2><a name="myprojects">Projects</a></h2>
+             </div>
         </div>
-         <div>
-              <label for="message">Message</label>
-              <input class="big-form" type="email" id="message" required/>
+        <div class="row">
+            <div class="col-md-12">
+                 <h4 id="bold">Ecommerce Innovation</h4>
+                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quae ducimus nihil, vero, dicta fugit voluptas dolores eius ad. Facilis iste minima consequuntur, nihil. Exercitationem tempore aliquam, libero doloribus deserunt ab.</p>
+             </div>
+             <div class="col-md-12">   
+                <h4 id="bold">Revolutionary Social Media Site</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Atque nobis esse omnis mollitia explicabo amet sit doloribus voluptates asperiores eligendi unde accusamus neque, hic, sapiente sed aperiam voluptatum facere quibusdam.</p>
+            </div>
+       </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Experience</h2>
+             </div>
         </div>
-        <div class="button">
-              <button type="submit">Send</button>
-         </div>
-      </form>
-      
- </div>
+        <div class="row">
+            <div class="col-md-12">
+                 <h4>Customer Support Lead</h4>
+                 <p class="green">March 2015 - January 2016</p>
+                 <p class="indent">Move Loot, Inc.</p>
+             </div>
+             <div class="col-md-12">   
+                 <h4>Marketing Manager</h4>
+                 <p class="green">June 2013 - February 2015</p>
+                 <p class="indent">Zoom Insights, Inc.</p>
+            </div>
+       </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Education</h2>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                 <p>Depot/U</p>
+             </div>
+             <div class="col-md-12">   
+                <p>University of North Carolina at Chapel Hill</p>
+            </div>
+       </div>
+    </div>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                 <h2><a name="contactme">Contact Me</a></h2>
+             </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                 <form action="" method="post">
+                <div>
+                     <label for="name">Name</label>
+                     <input type="text" id="name" required/>
+                </div>
+                 <div>
+                     <label for="mail">E-mail</label>
+                     <input type="email" id="mail" required/>
+                 </div>
+                  <div>
+                     <label for="message">Message</label>
+                     <input class="big-form" type="email" id="message" required/>
+                  </div>
+                  <div class="button">
+                    <button class="contact-button" type="submit">Send</button>
+                  </div>
+                 </form>
+           </div>
+       </div>
+    </div>
   
-  <footer>   
-        <p class="social"><a href="https://github.com/tom5265" target="_blank">Github</a> <a href="https://www.linkedin.com/in/moorethom" target="_blank">Linkedin</a></p>   
-        <p>Thomas Moore &copy;2016</p>    
-  </footer>
-  
+  <div id="footer" class="container">   
+      <div class="row">
+          <div class="col-md-12">
+             <p class="social"><a href="https://github.com/tom5265" target="_blank">Github</a> <a href="https://www.linkedin.com/in/moorethom" target="_blank">Linkedin</a></p>   
+             <p>Thomas Moore &copy;2016</p>    
+           </div>
+        </div>
+   </div>
+
 </body>
 
     
